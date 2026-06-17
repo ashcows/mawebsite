@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MA… — Taste That's True | Small-Batch Masalas</title>
+  <meta name="description" content="MA… makes small-batch South Indian masalas the way Ma did — whole spices, stone-ground, no fillers, no shortcuts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <a class="brand" href="#top">MA<span class="dots">…</span></a>
+    <span class="nav-tag">TASTE&nbsp;THAT'S&nbsp;TRUE</span>
+    <a class="btn btn-small" href="#range">Shop the range</a>
+  </nav>
+
+  <!-- ============ HERO — split: copy left, cinematic scrub right ============ -->
+  <section class="hero" id="top">
+    <div class="sticky">
+      <canvas id="hero-canvas"></canvas>
+
+      <!-- left copy column: beats crossfade as you scroll -->
+      <div class="hero-copy">
+        <div class="hbeat" data-in="0.00" data-out="0.20">
+          <span class="hbeat-no">PERFECT&nbsp;FINISH</span>
+          <h1>Taste that's<br/><em>true.</em></h1>
+          <p>Small-batch South Indian masala, made the way Ma made it — whole spices, and absolutely nothing else.</p>
+        </div>
+        <div class="hbeat" data-in="0.24" data-out="0.46">
+          <span class="hbeat-no">01&nbsp;—&nbsp;THE WHOLE SPICE</span>
+          <h1>Whole<br/><em>spices.</em></h1>
+          <p>Cinnamon, cardamom, clove and pepper — measured by hand, roasted on a hot pan.</p>
+        </div>
+        <div class="hbeat" data-in="0.50" data-out="0.72">
+          <span class="hbeat-no">02&nbsp;—&nbsp;STONE-GROUND</span>
+          <h1>Ground<br/><em>fresh.</em></h1>
+          <p>Stone-ground in small batches and bottled within hours. Never warehoused, never stretched.</p>
+        </div>
+        <div class="hbeat" data-in="0.76" data-out="1.00">
+          <span class="hbeat-no">03&nbsp;—&nbsp;SEALED IN</span>
+          <h1>Nothing<br/><em>else.</em></h1>
+          <p>No fillers. No shortcuts. No preservatives. Sealed under a gold lid at peak aroma.</p>
+          <a class="btn" href="#range">Shop the range</a>
+        </div>
+      </div>
+
+      <!-- step indicator -->
+      <div class="hero-steps" id="hero-steps">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="scroll-hint">SCROLL&nbsp;&nbsp;▾</div>
+      <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>TASTE THAT'S TRUE ✦ MADE IN SMALL BATCHES ✦ NO FILLERS ✦ NO SHORTCUTS ✦ NO PRESERVATIVES ✦ NO ARTIFICIAL COLORS ✦&nbsp;</span>
+      <span>TASTE THAT'S TRUE ✦ MADE IN SMALL BATCHES ✦ NO FILLERS ✦ NO SHORTCUTS ✦ NO PRESERVATIVES ✦ NO ARTIFICIAL COLORS ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ============ STORY ============ -->
+  <section class="story">
+    <div class="story-grid">
+      <div class="story-copy">
+        <p class="kicker reveal">OUR STORY</p>
+        <h2 class="reveal">Ma never measured.<br/><em>She knew.</em></h2>
+        <p class="lead reveal">A pinch more roasted cumin when the rains came. Curry leaves crisped
+        in ghee, never oil. Pepper pounded coarse so it blooms in hot rasam. We bottled that
+        knowing — not a recipe card, but a kitchen's worth of instinct.</p>
+        <p class="lead reveal">Every jar of MA… starts as whole spices on a hot pan and ends sealed
+        under a gold lid within hours — never warehoused, never stretched with rice flour or salt.</p>
+        <div class="stats reveal">
+          <div class="stat"><span class="stat-num" data-count="13" data-suffix="">0</span><span class="stat-label">whole spices, roasted &amp; ground</span></div>
+          <div class="stat"><span class="stat-num" data-count="48" data-suffix="h">0</span><span class="stat-label">from grind to sealed jar</span></div>
+          <div class="stat"><span class="stat-num" data-count="0" data-suffix="">0</span><span class="stat-label">fillers, ever</span></div>
+        </div>
+      </div>
+      <figure class="story-photo reveal">
+        <img src="assets/garam.png" alt="MA… Garam Masala jar" />
+        <figcaption>Perfect Finish — Garam Masala, batch of June.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ RANGE — horizontal pinned scrub ============ -->
+  <section class="hsec range" id="range">
+    <div class="sticky">
+      <div class="hsec-head">
+        <p class="kicker">THE RANGE</p>
+        <h2>Four jars.<br/><em>One kitchen's soul.</em></h2>
+        <span class="hsec-hint">DRAG&nbsp;/&nbsp;SCROLL&nbsp;→</span>
+      </div>
+      <div class="htrack" id="range-track">
+        <article class="card">
+          <div class="card-art" style="--tint:#fbeede"><img src="assets/rasam.png" alt="MA… Instant Rasam Podi jar" /></div>
+          <div class="card-body">
+            <p class="card-kicker">SOUL SOOTHING</p>
+            <h3>Instant Rasam Podi</h3>
+            <p>Pepper-forward and tamarind-bright. Two spoons, boiling water, ten minutes — rasam that tastes like someone waited up for you.</p>
+            <a class="btn" href="#cta">Add to ritual — ₹249</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-art" style="--tint:#fdf0d6"><img src="assets/sambar.png" alt="MA… Homestyle Sambar Podi jar" /></div>
+          <div class="card-body">
+            <p class="card-kicker">HOMESTYLE</p>
+            <h3>Sambar Podi</h3>
+            <p>Roasted dals, byadgi chillies and fenugreek in proper proportion. Thick, slow-simmered Sunday sambar — any day you need it.</p>
+            <a class="btn" href="#cta">Add to ritual — ₹249</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-art" style="--tint:#f6efe0"><img src="assets/garam.png" alt="MA… Perfect Finish Garam Masala jar" /></div>
+          <div class="card-body">
+            <p class="card-kicker">PERFECT FINISH</p>
+            <h3>Garam Masala</h3>
+            <p>Cinnamon, cardamom, clove and pepper, roasted whole and stone-ground. The warm last word on every curry.</p>
+            <a class="btn" href="#cta">Add to ritual — ₹279</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-art" style="--tint:#f3f1df"><img src="assets/chai.png" alt="MA… Comforting Chai Masala jar" /></div>
+          <div class="card-body">
+            <p class="card-kicker">COMFORTING</p>
+            <h3>Chai Masala</h3>
+            <p>Cardamom cracked the same morning, ginger dried whole, a whisper of clove. One pinch turns milk-tea into a conversation.</p>
+            <a class="btn" href="#cta">Add to ritual — ₹299</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROMISE — horizontal pinned statements ============ -->
+  <section class="hsec promise" id="promise">
+    <div class="sticky">
+      <div class="htrack htrack-wide" id="promise-track">
+        <div class="ppanel pintro">
+          <p class="kicker">THE MA… PROMISE</p>
+          <h2>What's <em>not</em> in the jar matters just as much.</h2>
+        </div>
+        <div class="ppanel"><span class="pnum">01</span><h3>No fillers</h3><p>No rice flour, no salt-padding, no bulking agents. 100&nbsp;g of spice is 100&nbsp;g of spice.</p></div>
+        <div class="ppanel"><span class="pnum">02</span><h3>No shortcuts</h3><p>Whole spices roasted and stone-ground per batch — never pre-ground commodity powder.</p></div>
+        <div class="ppanel"><span class="pnum">03</span><h3>No preservatives</h3><p>A gold lid and a quick kitchen are our only preservation technology.</p></div>
+        <div class="ppanel"><span class="pnum">04</span><h3>No artificial colors</h3><p>That deep red is byadgi chilli. That gold is turmeric. Nothing else, ever.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery">
+    <p class="kicker reveal">THE FULL SHELF</p>
+    <h2 class="reveal">Made small, <em>made true.</em></h2>
+    <div class="gal-grid">
+      <figure class="gal reveal"><img src="assets/rasam.png" alt="Instant Rasam Podi"/><figcaption>Instant Rasam Podi</figcaption></figure>
+      <figure class="gal reveal"><img src="assets/sambar.png" alt="Sambar Podi"/><figcaption>Homestyle Sambar Podi</figcaption></figure>
+      <figure class="gal reveal"><img src="assets/garam.png" alt="Garam Masala"/><figcaption>Perfect Finish Garam Masala</figcaption></figure>
+      <figure class="gal reveal"><img src="assets/chai.png" alt="Chai Masala"/><figcaption>Comforting Chai Masala</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ CTA / FOOTER ============ -->
+  <section class="cta" id="cta">
+    <h2 class="reveal">Bring <em>Ma</em> home.</h2>
+    <p class="lead reveal">Small batches sell out — join the list and we'll hold a jar from the next grind for you.</p>
+    <form class="cta-form reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Jar held ✓';">
+      <input type="email" required placeholder="you@example.com" aria-label="Email" />
+      <button class="btn btn-light" type="submit">Hold my jar</button>
+    </form>
+    <footer>
+      <span class="brand brand-foot">MA<span class="dots">…</span></span>
+      <span>Taste that's true. Made with love &amp; no shortcuts.</span>
+      <span>© 2026 MA Foods</span>
+    </footer>
+  </section>
+
+  <script src="vendor/lenis.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
